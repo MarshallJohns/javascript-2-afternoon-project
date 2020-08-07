@@ -67,13 +67,10 @@ favoriteThings['book'] = 'Harry Potter'
 */
 
 //Code here
-let backPack = {
-  
-
-}
+let backPack = {}
 
 let item = 'firstPocket'
-backPack['item'] = 'firstPocket: chapStick '
+backPack[item] = 'chapstick'
 // backPack.item.firstPocket = 'chapStick'
 
 backPack.color = 'red'
@@ -153,8 +150,12 @@ methodCollection.logHello = function(){console.log('hello')}
 //Code Here
 
 function makePerson(name, birthday, ssn){
-  
-  
+  let person = {
+    name: name,
+    birthday: birthday,
+    ssn, ssn
+  }
+  return person
          
 }
 ////////// PROBLEM 7 //////////
@@ -166,5 +167,10 @@ function makePerson(name, birthday, ssn){
 
 //Code Here
 function makeCard(cardNumber, expirationDate, securityCode){
-
+  let card = {
+    cardNumber: cardNumber,
+    expirationDate: expirationDate,
+    securityCode: securityCode
+  }
+  return card
 }
