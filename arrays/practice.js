@@ -179,7 +179,34 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 */
 
 //Code Here
+function removeItem(list, item){
+  if(list && item){
+    if(list.includes(item)){
+      let index = null
+      for(let i = 0; i < list.length; i++){
+        if(list[i] === item){
+          index = i
+          break;
+        }
+      }
+      list.splice(index, 1)
+      return list
+    } else {
+      return list
+    }
+  } else {
+    return []
+  }
+}
 
+function addItem(list,item){
+  if(list && itme){
+    list.push(item)
+    return list
+  } else{
+    return[]
+  }
+}
 
 
 ////////// PROBLEM 9 //////////
@@ -231,7 +258,13 @@ for(var i = 0; i < num2; i++){
 
 //Code Here
 
-
+function longer(arr1, arr2){
+  if(arr1.length > arr2.length){
+    return arr1
+  } else {
+    return arr2
+  }
+}
 
 /*
   As a continuation of the previous problem, write another function called 'both'.
